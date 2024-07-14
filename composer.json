@@ -1,0 +1,24 @@
+{
+    "name": "mmae/apiresponse",
+    "description": "Standard API Response for Front-End Clients",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MMAE\\ApiResponse\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mahmoud mostafa",
+            "email": "mah.mostafa18@gmail.com",
+            "role": "Senior Full-Stack Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "9.x-dev"
+
+    }
+}

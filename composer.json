@@ -20,5 +20,12 @@
     "require-dev": {
         "orchestra/testbench": "9.x-dev"
 
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MMAE\\ApiResponse\\MMAEApiResponseServiceProvider"
+            ]
+        }
     }
 }

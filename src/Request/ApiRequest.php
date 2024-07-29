@@ -15,10 +15,8 @@ class ApiRequest extends FormRequest
     {
         throw new HttpResponseException($this->failedResponse(
             $validator->errors()->toArray(),
-            Response::$VALIDATION_FAILED_MESSAGE ,
-            Response::$VALIDATION_FAILED_STATUS
+            property_exists($this, 'message') ? (!is_null($this->message) ? $this->message : Response::$VALIDATION_FAILED_MESSAGE) : Response::$VALIDATION_FAILED_MESSAGE,
+            property_exists($this, 'statusCode') ? ($this->statusCode ?? Response::$VALIDATION_FAILED_STATUS) : Response::$VALIDATION_FAILED_STATUS,
         ));
     }
-
-
 }

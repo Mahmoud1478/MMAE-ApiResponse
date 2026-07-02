@@ -9,4 +9,7 @@
         </testsuite>
     </testsuites>
 
+    <php>
+        <env name="APP_KEY" value="base64:biQbKLfHz3ffbFfZgl/kIIpkrRTDNLT5EGwzYhvFh08="/>
+    </php>
 </phpunit>

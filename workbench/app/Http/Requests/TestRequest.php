@@ -2,14 +2,11 @@
 
 namespace Workbench\App\Http\Requests;
 
-use  MMAE\ApiResponse\Request\ApiRequest;
+use Illuminate\Contracts\Validation\ValidationRule;
+use MMAE\ApiResponse\Request\ApiRequest;
 
-class ChangeSpecificTestRequest extends ApiRequest
+class TestRequest extends ApiRequest
 {
-
-    public $message = 'testing';
-    public $statusCode = 200;
-
     /**
      * Determine if the user is authorized to make this request.
      */
@@ -21,7 +18,7 @@ class ChangeSpecificTestRequest extends ApiRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
+     * @return array<string, ValidationRule|array<mixed>|string>
      */
     public function rules(): array
     {

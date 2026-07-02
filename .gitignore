@@ -1,3 +1,5 @@
 /vendor/
 .phpunit.result.cache
-
+composer.lock
+/workbench/bootstrap/cache/
+/workbench/storage/
